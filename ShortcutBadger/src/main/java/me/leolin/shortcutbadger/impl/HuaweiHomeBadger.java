@@ -1,8 +1,10 @@
 package me.leolin.shortcutbadger.impl;
 
+import android.annotation.TargetApi;
 import android.content.ComponentName;
 import android.content.Context;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 
 import java.util.Arrays;
@@ -16,6 +18,7 @@ import me.leolin.shortcutbadger.ShortcutBadgeException;
  */
 public class HuaweiHomeBadger implements Badger {
 
+    @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
     public void executeBadge(Context context, ComponentName componentName, int badgeCount) throws ShortcutBadgeException {
         Bundle localBundle = new Bundle();

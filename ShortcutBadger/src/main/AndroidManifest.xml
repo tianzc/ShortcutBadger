@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="me.leolin.shortcutbadger">
 
+    <!-- 部分手机需要此权限，如华为手机 -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!--for Samsung-->
